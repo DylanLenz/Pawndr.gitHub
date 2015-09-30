@@ -31,7 +31,7 @@ var conditionValue = function(number){
                 break;
         case 10: valuePercentage = 1.00
                 break;
-        default: valuePercentage = 0.85;
+        default: valuePercentage = 0.85
         }
     return valuePercentage;
     };

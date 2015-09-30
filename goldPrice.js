@@ -11,13 +11,13 @@ Gold is returned to the user as a market range.
      gramPrice: function(ozPrice){
          return (ozPrice * 100) / 3110; //31.1g/Troy Oz * 100 to account for accuracy in JS
         };,
-    goldValue: function(gramPrice, weight, karatValue){
+    goldValue: function(gramPerPrice, weight, karatValue){
          if(dealType == undefined){
-             return gramPrice * weight * karatValue/100;
+             return gramPerPrice * weight * karatValue/100;
          }else if(dealType == 'pawn'){
-             return gramPrice * weight * karatValue/100;
+             return gramPerPrice * weight * karatValue/100;
          }else if(dealType == 'sale'){
-             return gramPrice * weight * karatValue/100;
+             return gramPerPrice * weight * karatValue/100;
          }
          //note future funcationality to determine variation in pricing based on dealType
         };,
