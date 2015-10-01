@@ -8,7 +8,7 @@ value of Gold today.
 Gold is returned to the user as a market range.
 */
  var gold = {
-     gramPrice: function(ozPrice){
+     gramPriceGold: function(ozPrice){
          return (ozPrice * 100) / 3110; //31.1g/Troy Oz * 100 to account for accuracy in JS
         };,
     goldValue: function(gramPerPrice, weight, karatValue){
@@ -21,7 +21,7 @@ Gold is returned to the user as a market range.
          }
          //note future funcationality to determine variation in pricing based on dealType
         };,
-    karatValue: function(karat){
+    karatValueGold: function(karat){
          var k;
          switch(karat){
              case 9: k = 375
